@@ -2,7 +2,7 @@
  * PageName: 弹窗和保单组合
  * Description:
  */
-import { useEffect, useState, useRef, useImperativeHandle } from 'react'
+import * as React from 'react';
 import { useSelector, useDispatch } from 'umi'
 import { Modal, Button } from 'antd'
 import { Form as Forms } from '../Form'
@@ -10,12 +10,12 @@ import Style from '../ModalButton/style.less'
 
 export default function ModalButton(props) {
   let { refs, modal: modalProps = {}, form: formProps = {} } = props
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = React.useState(false)
   const dispatch = useDispatch()
   const loading = useSelector((state) => state.loading)
-  const [form, setForm] = useState({})
-  const [modal, setModal] = useState({})
-  const formRef = useRef()
+  const [form, setForm] = React.useState({})
+  const [modal, setModal] = React.useState({})
+  const formRef = React.useRef()
   let formsGroup = formRef.current?.form
 
 
@@ -37,7 +37,7 @@ export default function ModalButton(props) {
   }
 
   // 提供给父级调用 
-  useImperativeHandle(refs, () => ({ form: formsGroup, formModal }))
+  React.useImperativeHandle(refs, () => ({ form: formsGroup, formModal }))
 
   /**
    * FunctionName: 点击确认
