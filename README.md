@@ -10,12 +10,12 @@ package.json 文件里面引用：
 
 #### 组件迭代编写注意点
 
-* 页面import
+* 组件重命名
 
-> > `import { Form as Forms } from 'antd';`
-> > 私有组件引用不能用 `as` 重命名，会报错
+> `import { Form as Forms } from 'antd';`
+> 私有组件引用不能用 `as` 重命名，会报错
 
-* 第二项
+* 组件引用路径
 
-> > `import { Form as Forms } from '@/antd';`
-> > 私有组件里面引用路径不能用 `@/`，会报错
+> `import { Form as Forms } from '@/antd';`
+> 私有组件里面引用路径不能用 `@/`，会报错
