@@ -2,18 +2,18 @@
  * PageName: 页面
  * Description:
  */
-import * as React from 'react';
-import { Space, Button, Spin } from 'antd';
-import Style from './style.less';
+import * as React from 'react'
+import { Space, Button, Spin } from 'antd'
+import Style from './style.less'
 import { history } from 'umi'
-import { PoweroffOutlined } from '@ant-design/icons';
+import { PoweroffOutlined } from '@ant-design/icons'
 import FootBtns from './footBtns'
-import { FormModal } from '../FormModal'
+import FormModal from '../FormModal'
 
 export default function (props) {
   const formRef = React.useRef()
 
-  let { children, title, right = [], btns = [], foot = null, loading = false, bgColor } = props;
+  let { children, title, right = [], btns = [], foot = null, loading = false, bgColor } = props
 
   /**
    * FunctionName: 按钮列表
@@ -33,11 +33,11 @@ export default function (props) {
               <Button key={key} {...item}>
                 {item.name}
               </Button>
-            );
+            )
           }).filter(Boolean)
         }
       </>
-    );
+    )
   }
 
   /**
@@ -133,17 +133,17 @@ export default function (props) {
                     bixu = /^(?=.*\d)(?=.*[a-zA-Z])(?=.*[~!@#$%^&*])[\da-zA-Z~!@#$%^&*]$/
                   let gz = JSON.parse(localStorage.configGetPassword || '{}')
                   if (!value) {
-                    return Promise.reject(new Error('请输入新密码'));
+                    return Promise.reject(new Error('请输入新密码'))
                   } else if (value.length > gz.max) {
-                    return Promise.reject(new Error('密码长度必须小于' + gz.max));
+                    return Promise.reject(new Error('密码长度必须小于' + gz.max))
                   } else if (value.length < gz.min) {
-                    return Promise.reject(new Error('密码长度必须大于' + gz.min));
+                    return Promise.reject(new Error('密码长度必须大于' + gz.min))
                   } else if (gz.complexity == 1 && !reny.test(value)) {
-                    return Promise.reject(new Error('数字、字母、特殊字符任意两个的组合'));
+                    return Promise.reject(new Error('数字、字母、特殊字符任意两个的组合'))
                   } else if (gz.complexity == 2 && !bixu.test(value)) {
-                    return Promise.reject(new Error('数字、字母、特殊字符的组合'));
+                    return Promise.reject(new Error('数字、字母、特殊字符的组合'))
                   }
-                  return Promise.resolve();
+                  return Promise.resolve()
                 }
               }]
             }, {
@@ -157,9 +157,9 @@ export default function (props) {
               }, ({ getFieldValue, setFields }) => ({
                 validator(_, value) {
                   if (!value || getFieldValue('newPassword') === value) {
-                    return Promise.resolve();
+                    return Promise.resolve()
                   }
-                  return Promise.reject(new Error('两次输入密码不一致'));
+                  return Promise.reject(new Error('两次输入密码不一致'))
                 },
               })]
             },
