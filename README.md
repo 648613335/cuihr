@@ -12,7 +12,7 @@ package.json 文件里面引用：
 
 [点击查看](./PAGE.md ':include :type=markdown')
 
-#### 组件迭代编写注意点
+#### 组件迭代编写注意点（开发者）
 
 * 组件重命名
 
