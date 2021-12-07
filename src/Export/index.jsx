@@ -4,9 +4,7 @@
  */
 import { useState } from 'react'
 import { Modal, Spin, Button } from 'antd'
-import { useSelector, useDispatch, history } from 'umi'
 import { LoadingOutlined } from '@ant-design/icons';
-import Style from './style.less'
 import qs from 'qs'
 
 export default function (props) {
