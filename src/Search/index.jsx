@@ -6,7 +6,7 @@
 import * as React from 'react';
 import { Button, Form, Space, Affix } from 'antd'
 import Style from './style.less'
-import { Form as Forms } from '../Form'
+import Forms from '../Form'
 
 export default function (props) {
   let {
