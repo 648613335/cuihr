@@ -2,7 +2,7 @@
   "name": "cuihr",
   "version": "1.0.0",
   "description": "自定义组件",
-  "main": "components/src/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
