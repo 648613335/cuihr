@@ -3,7 +3,7 @@
  * Description:
  */
 import { Input, TimePicker, DatePicker, Radio, InputNumber, Switch, Cascader, Checkbox } from 'antd'
-import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '../components'
+import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '@/components'
 import Station from '@/pages/transport/transBus/lineManage/components/station.jsx'
 import Service from '@/pages/transport/transBus/lineManage/components/service.jsx'
 import React from 'react'
