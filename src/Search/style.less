@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  background-color: white;
+  padding: 10px 20px 0 20px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+    .form_cnt {
+      flex-direction: row;
+    }
+    .form_item,
+    .form_btns {
+      display: flex;
+    }
+    .form_item {
+      flex-wrap: wrap;
+    }
+    .ant-select {
+      width: 150px;
+    }
+  }
+}
+:global{
+  .noCallback .ant-form-item-explain, .ant-form-item-extra{min-height: auto;}
+}

@@ -1,12 +1,14 @@
 /*
- * PageName: 详情卡片区域
+ * PageName:
+ * Branch: 0629
+ * Autor: 崔皓然
  * Description:
  */
-import { Space, Card, Button, Spin } from 'antd';
 import Style from './style.less'
+import { Button, Space } from 'antd'
 
 export default function (props) {
-    let { extra, btns } = props;
+    let { data } = props
 
     /**
      * FunctionName: 按钮列表
@@ -14,9 +16,9 @@ export default function (props) {
      */
     function buttons() {
         return (
-            <Space>
+            <>
                 {
-                    btns.map((item, key) => {
+                    data.map((item, key) => {
                         if (item.show === false) {
                             return undefined
                         }
@@ -29,15 +31,13 @@ export default function (props) {
                         );
                     }).filter(Boolean)
                 }
-            </Space>
+            </>
         );
     }
 
     return (
-        <div className={Style.card}>
-            <Card {...props} extra={Array.isArray(btns) ? buttons() : extra}>
-                {props.children}
-            </Card>
-        </div>
-    );
+        <Space className={Style.footBtns}>
+            {buttons()}
+        </Space>
+    )
 }
