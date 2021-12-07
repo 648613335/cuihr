@@ -8,12 +8,10 @@ import { useSelector, useDispatch, history } from 'umi'
 import { LoadingOutlined } from '@ant-design/icons';
 import Style from './style.less'
 import qs from 'qs'
-import Config from '@/utils/config'
 
 export default function (props) {
-    let { title = '导出', handleClick, handleOk, handleCancel, button, url, payload, user = 'lcy', children } = props
+    let { title = '导出', handleClick, handleOk, handleCancel, button, url, payload,  children, host = '' } = props
     const [visible, setVisible] = useState(false)
-    const host = user == 'lcy' ? Config.DOMAINNAME.lcy : Config.DOMAINNAME.zsm
     let params = qs.stringify(payload) && '&' + qs.stringify(payload)
 
     // for (const key in payload) {

@@ -7,7 +7,6 @@ import { Modal, Spin, Button, Upload, message, notification } from 'antd'
 import { useSelector, useDispatch, history } from 'umi'
 import { LoadingOutlined, UploadOutlined } from '@ant-design/icons';
 import Style from './style.less'
-import Config from '@/utils/config'
 
 export default function (props) {
     let {
@@ -21,7 +20,7 @@ export default function (props) {
         done = () => { },
         children,
         href,
-        api = Config.DOMAINNAME.lcy + '/',
+        api = '',
         payload = [],
         isMessage = true
     } = props

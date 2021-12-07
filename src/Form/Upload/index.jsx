@@ -4,13 +4,12 @@
  */
 import { useState, useEffect } from 'react'
 import { Upload, Button } from 'antd'
-import Config from '@/utils/config'
 
 export default function (props) {
     let { onChange, handleChange, listType, value = '', action } = props
     let upload = {
         name: 'file',
-        action: action || Config.DOMAINNAME.lcy + '/File/UploadFile?token=' + localStorage.token,
+        action: action,
         headers: {
             authorization: 'authorization-text',
         },

@@ -5,7 +5,6 @@
 
 import { Table, Pagination, Space, Button } from 'antd'
 import Style from './style.less'
-import Config from '@/utils/config'
 
 export default function (props) {
   let { headerLt = '', table, pagination, btns } = props
@@ -50,7 +49,7 @@ export default function (props) {
             showSizeChanger={false}
             showTitle={false}
             defaultCurrent={1}
-            defaultPageSize={Config.PAGE_SIZE}
+            defaultPageSize={10}
             // showTotal={total => `${pagination.current}/${total}`}
             {...pagination}
           // showQuickJumper

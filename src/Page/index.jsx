@@ -2,7 +2,7 @@
  * PageName: 页面
  * Description:
  */
-import { useState, useRef } from 'react';
+import * as React from 'react';
 import { Space, Button, Spin } from 'antd';
 import Style from './style.less';
 import { history } from 'umi'
@@ -11,7 +11,7 @@ import FootBtns from './footBtns'
 import { FormModal } from '../Form'
 
 export default function (props) {
-  const formRef = useRef()
+  const formRef = React.useRef()
 
   let { children, title, right = [], btns = [], foot = null, loading = false, bgColor } = props;
 
