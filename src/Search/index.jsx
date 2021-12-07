@@ -1,7 +1,7 @@
 /*
  * PageName: 搜索 * Description:
  */
-import { useImperativeHandle, useRef } from 'react'
+import * as React from 'react';
 import { Button, Form, Space, Affix } from 'antd'
 import Style from './style.less'
 import { Form as Forms } from '../Form'
@@ -18,7 +18,7 @@ export default function (props) {
     searchText,
     initialValues
   } = props
-  const ref = useRef()
+  const ref = React.useRef()
   // 获取Form组件的 form 对象
   let form = ref?.current?.form || {}
 
