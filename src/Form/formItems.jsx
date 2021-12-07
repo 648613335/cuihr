@@ -3,7 +3,7 @@
  * Description:
  */
 import { Input, TimePicker, DatePicker, Radio, InputNumber, Switch, Cascader, Checkbox } from 'antd'
-import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '../../components'
+import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '../'
 
 export default function (props) {
   let { item, values, form, key, modal } = props
