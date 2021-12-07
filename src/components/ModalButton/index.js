@@ -5,7 +5,7 @@
 import { useEffect, useState, useRef, useImperativeHandle, forwardRef } from 'react'
 import { useSelector, useDispatch } from 'umi'
 import { Modal, Button } from 'antd'
-import { Form as Forms } from '@/components'
+import { Form as Forms } from '../Form'
 import Style from './style.less'
 
 let formsGroup = ''

@@ -4,8 +4,7 @@
 import { useImperativeHandle, useRef } from 'react'
 import { Button, Form, Space, Affix } from 'antd'
 import Style from './style.less'
-import FormItems from '@/components/Form/formItems'
-import { Form as Forms } from '@/components'
+import { Form as Forms } from '../Form'
 
 export default function (props) {
   let {

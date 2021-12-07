@@ -8,7 +8,7 @@ import Style from './style.less';
 import { history } from 'umi'
 import { PoweroffOutlined } from '@ant-design/icons';
 import FootBtns from './footBtns'
-import { FormModal } from '@/components'
+import { FormModal } from '../Form'
 
 export default function (props) {
   const formRef = useRef()

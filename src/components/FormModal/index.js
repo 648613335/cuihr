@@ -5,7 +5,7 @@
 import { useEffect, useState, useRef, useImperativeHandle } from 'react'
 import { useSelector, useDispatch } from 'umi'
 import { Modal, Button } from 'antd'
-import { Form as Forms } from '@/components'
+import { Form as Forms } from '../Form'
 import Style from '../ModalButton/style.less'
 
 export default function ModalButton(props) {

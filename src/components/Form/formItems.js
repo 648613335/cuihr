@@ -3,9 +3,7 @@
  * Description:
  */
 import { Input, TimePicker, DatePicker, Radio, InputNumber, Switch, Cascader, Checkbox } from 'antd'
-import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '@/components'
-import Station from '@/pages/transport/transBus/lineManage/components/station.jsx'
-import Service from '@/pages/transport/transBus/lineManage/components/service.jsx'
+import { Unit, Editor, Select, TreeSelect, RangeNumber, Upload, Custom } from '../../components'
 import React from 'react'
 
 export default function (props) {
@@ -47,10 +45,6 @@ export default function (props) {
       return (<Cascader {...item} key={key} />)
     case 'RangeNumber':
       return (<RangeNumber {...item} key={key} />)
-    case 'Station':
-      return <Station {...item} key={key} />
-    case 'Service':
-      return <Service {...item} key={key} />
     case 'Custom':
       return <Custom {...item} key={key} />
     default:
