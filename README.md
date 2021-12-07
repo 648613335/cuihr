@@ -8,6 +8,10 @@
 package.json 文件里面引用：
 `"cuihr": "git+https://gitee.com/wesf/cuihr.git"`
 
+#### 案例
+
+[点击查看](./PAGE.md ':include :type=markdown')
+
 #### 组件迭代编写注意点
 
 * 组件重命名
@@ -19,7 +23,3 @@ package.json 文件里面引用：
 
 > `import { Form } from '@/cuihr';`
 > 私有组件里面引用路径不能用 `@/`，会报错
-
-[案例代码](./PAGE.md ':include :type=markdown')
-
-[^_^]: # (哈哈我是最萌注释，不会在浏览器中显示。)
