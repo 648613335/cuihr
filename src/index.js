@@ -1,2 +1,2 @@
-export { default as Card } from './components/Card';
-export { default as Descriptions } from './components/Descriptions';
+export { default as Card } from './Card';
+export { default as Descriptions } from './Descriptions';
