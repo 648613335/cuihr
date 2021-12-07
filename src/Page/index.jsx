@@ -5,7 +5,7 @@
 import { useRef } from 'react'
 import { Space, Button, Spin } from 'antd'
 import Style from './style.less'
-import { history } from 'umi'
+// import { history } from 'umi'
 import { PoweroffOutlined } from '@ant-design/icons'
 import FootBtns from './footBtns'
 import FormModal from '../FormModal'
@@ -47,7 +47,7 @@ export default function (props) {
   function signOut() {
     localStorage.clear()
     localStorage.url = window.location.pathname
-    history.push('/login')
+    // history.push('/login')
   }
 
 
