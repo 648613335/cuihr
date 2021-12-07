@@ -6,9 +6,9 @@ import * as React from 'react';
 import { useSelector, useDispatch } from 'umi'
 import { Modal, Button } from 'antd'
 import { Form as Forms } from '../Form'
-import Style from '../ModalButton/style.less'
+import Style from './style.less'
 
-export default function ModalButton(props) {
+export default function FormModal(props) {
   let { refs, modal: modalProps = {}, form: formProps = {} } = props
   const [visible, setVisible] = React.useState(false)
   const dispatch = useDispatch()
