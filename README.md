@@ -20,4 +20,6 @@ package.json 文件里面引用：
 > `import { Form } from '@/cuihr';`
 > 私有组件里面引用路径不能用 `@/`，会报错
 
-[](./PAGE.md ':include :type=markdown')
+[案例代码](./PAGE.md ':include :type=markdown')
+
+[^_^]: # (哈哈我是最萌注释，不会在浏览器中显示。)
