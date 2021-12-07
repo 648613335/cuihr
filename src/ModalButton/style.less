@@ -1,0 +1,25 @@
+.modalCnt {
+  :global {
+    .form_cnt {
+      display: flex;
+    }
+    .form_cnt > .ant-space-item,
+    .form_item,
+    .form_item > .ant-space-item {
+      flex: 1;
+      display: flex;
+      width: 100%;
+    }
+    .form_item {
+      align-items: flex-start;
+    }
+    .ant-select,
+    .ant-picker,
+    .ant-input-number {
+      width: 100%;
+    }
+    .ant-form-horizontal .ant-form-item-label {
+      width: 110px;
+    }
+  }
+}
